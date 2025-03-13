@@ -1,10 +1,10 @@
-name: Hola Mundo
+name: Hola Mundo #Workflow names
 
-on: [push]
+on: [push] #Event that triggers the workflow
 
-jobs: 
-  hola:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Hola Mundo
-        run: echo "Hola Mundo"
+jobs: #Jobs that run in parallel
+  hola: #Job name
+    runs-on: ubuntu-latest #Operating system
+    steps: #Steps that run in sequence
+      - name: Hola Mundo #Step name
+        run: echo "Hola Mundo" #Command to run
