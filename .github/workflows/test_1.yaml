@@ -8,3 +8,9 @@ jobs: #Jobs that run in parallel
     steps: #Steps that run in sequence
       - name: Hola Mundo #Step name
         run: echo "Hola Mundo" #Command to run
+  
+  other: #Job name
+    runs-on: ubuntu-latest #Operating system
+    steps: #Steps that run in sequence
+      - name: LS #Step name
+        run: ls -al #Command to run
